@@ -324,7 +324,7 @@
                 let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
                 const payload = { contents: chatHistory };
                 const apiKey = "";
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyB9mnQ4Ku0JuIEsZU2njyRvAJftW4GAIIo`;
+                const apiUrl ='/api/generate-description'; 
                 const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -552,7 +552,7 @@
         
         async function callGemini(payload) {
             const apiKey = ""; 
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyB9mnQ4Ku0JuIEsZU2njyRvAJftW4GAIIo`;
+            const apiUrl = '/api/chat'; 
             const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
