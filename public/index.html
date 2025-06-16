@@ -7,7 +7,9 @@
     <title>Chatbot IA - Vende 24/7 | Automatiza tu Negocio</title>
     <meta name="description"
         content="Transforma tu página web con un chatbot inteligente. Aumenta tus ventas, captura más leads y ofrece atención al cliente 24/7 con IA. Descubre nuestros planes.">
-    <!-- <script src="https://cdn.tailwindcss.com"></script>Eliminar -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="/output.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 
@@ -24,9 +26,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #030712;
-            /* gray-950 */
             color: #f9fafb;
-            /* gray-50 */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -348,7 +348,7 @@
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white">Un Chatbot que <span
                             class="gradient-text">Trabaja para Ti</span></h2>
                     <p class="mt-3 text-gray-400 max-w-2xl mx-auto">Imagina un asistente que no duerme. Introduce tu
-                        tipo de negocio y mira cómo un chatbot puede ayudarte a crecer.</p>
+                        tipo de negocio y mira cómo la misma IA explica como un chatbot puede ayudarte a crecer.</p>
                 </div>
                 <div
                     class="bg-gray-900 p-6 md:p-8 rounded-xl border border-gray-800 max-w-3xl mx-auto shadow-2xl shadow-purple-500/10">
@@ -456,7 +456,7 @@
                     <p class="text-2xl italic text-gray-200">"Desde que integramos el chatbot, nuestros leads aumentaron
                         un 300% en el primer mes. Es como tener a nuestro mejor vendedor trabajando 24/7."</p>
                     <p class="mt-6 font-bold text-white">— Cliente Satisfecho</p>
-                    <p class="text-sm text-gray-400">CEO de [Empresa Cliente]</p>
+                    <p class="text-sm text-gray-400">Dueño de empresa de Alcantarillados Chile</p>
                 </div>
             </div>
         </section>
@@ -476,7 +476,7 @@
 
     <footer class="bg-gray-950 border-t border-gray-800 text-gray-400 py-6">
         <div class="container mx-auto px-6 text-center text-sm">
-            <p>&copy; 2025 AsistenteIA. Todos los derechos reservados.</p>
+            <p>&copy; 2025 AutomatizaWeb. Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -531,6 +531,12 @@
                     <input type="email" id="email" name="email" required
                         class="w-full p-3 bg-gray-800 border border-gray-700 rounded-md focus:ring-purple-500 focus:border-purple-500 text-white placeholder-gray-500">
                 </div>
+                <div class="mb-6">
+                    <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Teléfono (Opcional)</label>
+                    <input type="tel" id="phone" name="phone"
+                        class="w-full p-3 bg-gray-800 border border-gray-700 rounded-md focus:ring-purple-500 focus:border-purple-500 text-white placeholder-gray-500">
+                </div>
+
                 <button type="submit"
                     class="w-full bg-purple-600 text-white font-bold py-3 rounded-lg hover:bg-purple-500 transition-colors">Enviar
                     Solicitud</button>
@@ -698,11 +704,44 @@
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) closeModal();
             });
-            contactForm.addEventListener('submit', (e) => {
+            contactForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
-                alert(`¡Gracias ${document.getElementById('name').value}! Hemos recibido tu solicitud.`);
-                closeModal();
-                contactForm.reset();
+
+                const submitButton = contactForm.querySelector('button[type="submit"]');
+                const originalButtonText = submitButton.innerHTML;
+
+                // Mostrar estado de carga
+                submitButton.disabled = true;
+                submitButton.innerHTML = '<div class="loader mx-auto"></div>';
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value; // Obtenemos el teléfono
+
+                try {
+                    const response = await fetch('/api/send-contact-form', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name, email, phone }), // Enviamos los 3 datos
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Falló el envío del formulario');
+                    }
+
+                    // Éxito
+                    alert(`¡Gracias ${name}! Hemos recibido tu solicitud y te contactaremos pronto.`);
+                    closeModal();
+                    contactForm.reset();
+
+                } catch (error) {
+                    console.error('Error en el formulario de contacto:', error);
+                    alert('Lo sentimos, ocurrió un error al enviar tu solicitud. Por favor, intenta de nuevo.');
+                } finally {
+                    // Restaurar botón
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalButtonText;
+                }
             });
 
             // Chatbot Logic
@@ -823,16 +862,17 @@
             7.  **Regla de Oro:** Si te preguntan algo fuera de tu conocimiento (ej. sobre marketing digital en general, SEO, etc.), responde con amabilidad: "Mi especialidad es todo sobre la automatización con chatbots. No tengo información sobre eso, pero con gusto te ayudo a analizar cómo un chatbot potenciaría tu negocio."
             ---`;
                 const systemInstructionText = `
-            **Tu Rol (Persona):** Eres "BotExpert", un consultor de ventas digital, experto en automatización con IA. Eres amigable, profesional, proactivo y muy persuasivo. Tu misión es entender la necesidad del cliente, demostrar el valor inmenso de un chatbot y calificarlo como un lead de alta calidad.
-            **Flujo de Conversación Estratégico (Paso a Paso):**
-            1.  **Saludo y Gancho:** Preséntate y haz una pregunta inicial para enganchar (ej. "¿Estás listo para que tu web trabaje por ti?").
-            2.  **Calificación - OBTENER UNO POR UNO:** a. Nombre. b. Página Web Actual (o tipo de negocio). c. Correo Electrónico.
-            3.  **Manejo de Preguntas:** Mientras pides los datos, usa la "BASE DE CONOCIMIENTO" para responder persuasivamente.
-            4.  **Cierre de Conversación:** Una vez que obtengas el correo electrónico, DEBES usar la frase EXACTA: "¡Excelente! He registrado tu información. Uno de nuestros especialistas te contactará muy pronto para afinar los detalles. ¡Gracias!". No añadas ni quites nada a esta frase.
-            **Reglas Clave de Comportamiento:**
-            * **Foco en el Pago Único:** NO menciones los costos de mantenimiento a menos que te pregunten directamente por "costos mensuales" o "mantención".
-            * **Sé Proactivo:** Si un cliente dice "vendo autos", puedes responder: "¡Genial! Imagina capturar los datos de cada persona que cotiza un auto en tu web, al instante. Para eso te sirve un chatbot. Para darte una idea más clara, ¿cuál es tu página web actual?".
-            * **Usa la "Regla de Oro":** No inventes información. Cíñete a tu especialidad.`;
+**Tu Rol (Persona):** Eres "BotExpert", un consultor de ventas digital, experto en automatización con IA. Eres amigable, profesional, proactivo y muy persuasivo. Tu misión es entender la necesidad del cliente, demostrar el valor inmenso de un chatbot y calificarlo como un lead de alta calidad.
+**Flujo de Conversación Estratégico (Paso a Paso):**
+1.  **Saludo y Gancho:** Preséntate y haz una pregunta inicial para enganchar (ej. "¿Estás listo para que tu web trabaje por ti?").
+2.  **Calificación - OBTENER UNO POR UNO:** a. Nombre. b. Correo Electrónico. c. **Número de WhatsApp** (menciónalo como opcional pero útil para un contacto más rápido).
+3.  **Manejo de Preguntas:** Mientras pides los datos, usa la "BASE DE CONOCIMIENTO" para responder persuasivamente.
+4.  **Cierre de Conversación:** Una vez que obtengas el correo electrónico (y opcionalmente el WhatsApp), DEBES usar la frase EXACTA: "¡Excelente! He registrado tu información. Uno de nuestros especialistas te contactará muy pronto para afinar los detalles. ¡Gracias!". No añadas ni quites nada a esta frase.
+**Reglas Clave de Comportamiento:**
+* **Foco en el Pago Único:** NO menciones los costos de mantenimiento a menos que te pregunten directamente por "costos mensuales" o "mantención".
+* **Sé Proactivo:** Si un cliente dice "vendo autos", puedes responder: "¡Genial! Imagina capturar los datos de cada persona que cotiza un auto en tu web, al instante. Para darte una idea más clara, ¿cuál es tu página web actual?".
+* **Ofrecer Contacto por WhatsApp:** Si el cliente parece apurado o indeciso, puedes ofrecerle una forma de contacto más directa. Di algo como: "Si lo prefieres, puedes hablar directamente con un especialista ahora mismo por WhatsApp." y luego proporciónale el enlace con el mensaje predefinido que tienes en tu base de conocimiento.
+* **Usa la "Regla de Oro":** No inventes información. Cíñete a tu especialidad.`;
 
                 const payload = {
                     contents: conversationHistory,
@@ -846,7 +886,7 @@
                 appendMessage('<strong>Generando y enviando resumen del lead...</strong>', 'system', 'summary');
 
                 // 1. Crear el prompt para el resumen
-                const summaryPrompt = `Basado en el siguiente historial de conversación, crea un resumen ejecutivo para un correo electrónico. Extrae los siguientes puntos clave en formato de lista: - Nombre del Cliente: - Sitio Web: - Email de Contacto: - Resumen de Necesidades: (Resume lo que el cliente busca o sus dudas). Historial de la Conversación: ${JSON.stringify(conversationHistory)}`;
+                const summaryPrompt = `Basado en el siguiente historial de conversación, crea un resumen ejecutivo para un correo electrónico. Extrae los siguientes puntos clave en formato de lista: - Nombre del Cliente: - Email de Contacto: - Número de WhatsApp: - Resumen de Necesidades: (Resume lo que el cliente busca o sus dudas). Historial de la Conversación: ${JSON.stringify(conversationHistory)}`;
 
                 const payload = { contents: [{ role: 'user', parts: [{ text: summaryPrompt }] }] };
 
