@@ -284,7 +284,8 @@
                     <path d="M8 9H16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     </path>
                 </svg>
-                <span class="text-2xl font-extrabold text-white">Automat<span class="text-purple-400">i</span>z<span class="text-purple-400">a</span>Web</span>
+                <span class="text-2xl font-extrabold text-white">Automat<span class="text-purple-400">i</span>z<span
+                        class="text-purple-400">a</span>Web</span>
             </a>
             <div class="hidden md:flex space-x-6 text-gray-300 font-medium">
                 <a href="#producto" class="hover:text-purple-400 transition-colors">Demostración</a>
@@ -842,27 +843,45 @@
             }
 
             async function triggerSummaryGeneration() {
-                appendMessage('<strong>Generando resumen del lead...</strong>', 'system', 'summary');
+                appendMessage('<strong>Generando y enviando resumen del lead...</strong>', 'system', 'summary');
 
+                // 1. Crear el prompt para el resumen
                 const summaryPrompt = `Basado en el siguiente historial de conversación, crea un resumen ejecutivo para un correo electrónico. Extrae los siguientes puntos clave en formato de lista: - Nombre del Cliente: - Sitio Web: - Email de Contacto: - Resumen de Necesidades: (Resume lo que el cliente busca o sus dudas). Historial de la Conversación: ${JSON.stringify(conversationHistory)}`;
 
                 const payload = { contents: [{ role: 'user', parts: [{ text: summaryPrompt }] }] };
 
                 try {
-                    const summary = await callGemini(payload);
-                    const yourEmail = "TU_EMAIL_AQUI@DOMINIO.COM"; // <-- IMPORTANTE: Reemplaza esto con tu email
-                    const subject = `Resumen de Lead: Chatbot para Nuevo Cliente`;
-                    const formattedSummary = summary.replace(/\n/g, '%0A');
-                    const mailtoLink = `mailto:${yourEmail}?subject=${encodeURIComponent(subject)}&body=${formattedSummary}`;
-                    const summaryHtml = `
-                    <strong>¡Lead Calificado!</strong>
-                    <p>He preparado un resumen. Haz clic abajo para abrirlo en tu cliente de correo y contactar al lead.</p>
-                    <a href="${mailtoLink}" target="_blank">Enviar Resumen por Email</a>
-                `;
-                    appendMessage(summaryHtml, 'system', 'summary');
+                    // 2. Obtener el resumen de Gemini (usando nuestra API /api/chat)
+                    const summaryResponse = await fetch('/api/chat', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!summaryResponse.ok) throw new Error('Error al generar el resumen');
+
+                    const result = await summaryResponse.json();
+                    const summaryText = result.candidates[0].content.parts[0].text;
+
+                    // Extraer el email del cliente del resumen para el asunto del correo
+                    const emailMatch = summaryText.match(/Email de Contacto:\s*(\S+@\S+)/);
+                    const leadEmail = emailMatch ? emailMatch[1] : 'Email no capturado';
+
+                    // 3. Enviar el resumen a nuestra nueva API /api/send-summary
+                    await fetch('/api/send-summary', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ summaryText: summaryText, leadEmail: leadEmail }),
+                    });
+
+                    // 4. Mostrar una notificación final al usuario
+                    const finalNotification = `
+                    <strong>¡Gracias!</strong>
+                    <p>Hemos enviado tu cotización. Un especialista te contactará pronto.</p>`;
+                    appendMessage(finalNotification, 'system', 'summary');
+
                 } catch (error) {
-                    console.error("Error generando resumen:", error);
-                    appendMessage("No pude generar el resumen. Revisa la conversación para contactar al cliente.", 'system', 'summary');
+                    console.error("Error en el proceso de resumen y envío:", error);
+                    appendMessage("No pudimos procesar tu solicitud final, pero un agente te contactará.", 'system', 'summary');
                 }
             }
         });
