@@ -1,0 +1,42 @@
+# ChatbotVentas
+
+> Empresa chilena especializada en implementación de chatbots de WhatsApp con IA para PYMES. Atención 24/7, integración con CRM y POS, métricas medibles. Casos reales con ROI documentado.
+
+Información clave:
+
+- **Marca:** ChatbotVentas
+- **Sitio web:** https://chatbotventas.cl
+- **Stack:** WhatsApp Business API + plataformas IA + integraciones custom
+- **Modalidad:** Setup + soporte mensual con métricas y reportes
+
+## Servicios
+
+- Diseño de flujos de chatbot personalizados
+- Integración con WhatsApp Business API
+- Voz de marca natural (no robótica)
+- Escalado a humano configurable
+- Integración con sistema de cocina/POS
+- Reportes mensuales de métricas
+
+## Blog
+
+- [5 errores al implementar chatbot en restaurantes](https://chatbotventas.cl/blog/errores-implementar-chatbot-restaurantes.html)
+- [Chatbot vs WhatsApp humano: cuándo elegir cada uno](https://chatbotventas.cl/blog/chatbot-vs-whatsapp-humano-cuando-elegir.html)
+- [ROI real de un chatbot en PYME: caso de éxito](https://chatbotventas.cl/blog/roi-chatbot-pyme-caso-exito.html)
+
+## Casos / Aliados
+
+- SushiApp (sushiapp.cl) — chatbot para delivery de sushi multi-sucursal
+- PaginasFast (paginasfast.cl) — agencia partner para sitios web
+- Arriaza Consulting (arriazaconsulting.cl) — asesoría tributaria PYME
+
+## Métricas típicas post-implementación
+
+- +30-40% conversión chat → pedido
+- -60-70% tiempo dedicado a WhatsApp por equipo humano
+- ROI a 2-3 meses
+- Cobertura 24/7
+
+## Cómo cotizar
+
+WhatsApp en chatbotventas.cl o formulario en /#contacto. Diagnóstico gratuito con simulación de ROI.
