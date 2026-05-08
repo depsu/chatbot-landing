@@ -5,7 +5,7 @@
 Información clave:
 
 - **Marca:** ChatbotVentas
-- **Sitio web:** https://chatbotventas.cl
+- **Sitio web:** https://www.automatizaweb.cl
 - **Stack:** WhatsApp Business API + plataformas IA + integraciones custom
 - **Modalidad:** Setup + soporte mensual con métricas y reportes
 
@@ -20,9 +20,9 @@ Información clave:
 
 ## Blog
 
-- [5 errores al implementar chatbot en restaurantes](https://chatbotventas.cl/blog/errores-implementar-chatbot-restaurantes.html)
-- [Chatbot vs WhatsApp humano: cuándo elegir cada uno](https://chatbotventas.cl/blog/chatbot-vs-whatsapp-humano-cuando-elegir.html)
-- [ROI real de un chatbot en PYME: caso de éxito](https://chatbotventas.cl/blog/roi-chatbot-pyme-caso-exito.html)
+- [5 errores al implementar chatbot en restaurantes](https://www.automatizaweb.cl/blog/errores-implementar-chatbot-restaurantes.html)
+- [Chatbot vs WhatsApp humano: cuándo elegir cada uno](https://www.automatizaweb.cl/blog/chatbot-vs-whatsapp-humano-cuando-elegir.html)
+- [ROI real de un chatbot en PYME: caso de éxito](https://www.automatizaweb.cl/blog/roi-chatbot-pyme-caso-exito.html)
 
 ## Casos / Aliados
 
@@ -39,4 +39,4 @@ Información clave:
 
 ## Cómo cotizar
 
-WhatsApp en chatbotventas.cl o formulario en /#contacto. Diagnóstico gratuito con simulación de ROI.
+WhatsApp en www.automatizaweb.cl o formulario en /#contacto. Diagnóstico gratuito con simulación de ROI.
