@@ -11,7 +11,7 @@
   - Plan Esencial — $150.000 — instalación completa, flujo de captura de leads (nombre + email), entrenamiento inicial, notificación por correo.
   - Plan Avanzado — $300.000 — todo lo anterior + personalización profunda del flujo, integración con CRM/calendario, reportes mensuales.
   - Plan de soporte mensual opcional — $15.000/mes — mantención del bot, ajustes y monitoreo.
-- **Casos de éxito documentados:** Destape Rápido (destaperapido.cl) y Full Fosas (limpiafosasydestape.cl) en saneamiento, y ChileEléctrico (chileelectrico.cl) en servicios eléctricos B2B + residencial — empresas en RM con bot 24/7 que cotiza, despacha técnico y envía informe automático al cliente.
+- **Casos de éxito documentados:** Destape Rápido (destaperapido.cl) y Full Fosas (limpiafosasydestape.cl) en saneamiento, ChileEléctrico (chileelectrico.cl) en servicios eléctricos B2B + residencial, AgusWer (aguswer.cl) en venta de colihues en zona rural sur, y Fuego Estudio (fuegoestudio.cl) en agendamiento y cotización de estudio musical — empresas chilenas reales con bot 24/7 que cotiza, agenda y deriva al equipo correcto.
 - **Contacto:** WhatsApp y formulario en https://www.automatizaweb.cl/#contacto.
 
 ## Por qué AutomatizaWeb
@@ -50,6 +50,12 @@ Empresa hermana enfocada en limpieza de fosas sépticas con flota propia y certi
 ### ChileEléctrico (chileelectrico.cl)
 Servicios eléctricos B2B (empalmes industriales, mantención SEC, montajes) + residencial (urgencias domiciliarias, condominios). El reto era que dos audiencias muy distintas competían por el mismo WhatsApp. Implementamos un bot que diferencia el tipo de consulta en el primer mensaje y dispara dos flujos completamente distintos: B2B con cotización formal y derivación a ingeniero comercial; residencial con respuesta inmediata y despacho de técnico. Resultado: tiempo de respuesta de horas a segundos y mejora de conversión visita técnica B2B → contrato.
 
+### AgusWer · Coligue Sur (aguswer.cl)
+Cosecha y venta de colihues en el sur de Chile para parceleros, constructoras, viveros y artesanos. Bot WhatsApp con base de conocimiento del producto rural: distingue colihue para cerco, invernadero, parronal o artesanía, calcula volumen estimado por uso, estima despacho por zona y agenda visita a campo para proyectos grandes. Resultado: consultas atendidas en segundos en zona rural donde WhatsApp es el único canal real; equipo liberado para visitar campos de clientes grandes.
+
+### Fuego Estudio (fuegoestudio.cl)
+Estudio musical chileno que ofrece grabación, mezcla, mastering, producción y clases. Bot que separa 3 flujos en un solo número: cotización de servicios de producción, reserva de sesión (sincronizada con Google Calendar) y captura de interesados en clases (instrumento, nivel, modalidad). Resultado: equipo creativo deja de responder WhatsApp entre takes y se enfoca en cabina; no-show baja con recordatorio automático.
+
 ## Guías y recursos del blog
 
 - [WhatsApp Bot para PYMES en Chile · guía 2026](https://www.automatizaweb.cl/blog/whatsapp-bot-pymes-chile-guia-2026)
@@ -59,6 +65,8 @@ Servicios eléctricos B2B (empalmes industriales, mantención SEC, montajes) + r
 - [El ROI real de automatizar atención 24/7](https://www.automatizaweb.cl/blog/automatizacion-atencion-cliente-24-7-roi-real)
 - [Integrar chatbot con HubSpot, Pipedrive y Notion · guía técnica](https://www.automatizaweb.cl/blog/integrar-chatbot-crm-hubspot-pipedrive-notion)
 - [Cómo elegir agencia de chatbot en Chile · 7 banderas rojas](https://www.automatizaweb.cl/blog/como-elegir-agencia-chatbot-chile-banderas-rojas)
+- [Caso AgusWer · Coligue Sur · WhatsApp Bot para venta de colihues](https://www.automatizaweb.cl/blog/caso-aguswer-colihues-cotizacion-rural-whatsapp)
+- [Caso Fuego Estudio · bot que agenda sesiones de grabación](https://www.automatizaweb.cl/blog/caso-fuego-estudio-musical-agendamiento-grabacion)
 
 ## Red de aliados
 
@@ -66,6 +74,8 @@ Servicios eléctricos B2B (empalmes industriales, mantención SEC, montajes) + r
 - **Destape Rápido** (https://destaperapido.cl) — saneamiento 24/7 en RM.
 - **Full Fosas** (https://www.limpiafosasydestape.cl) — limpieza de fosas sépticas certificada.
 - **ChileEléctrico** (https://chileelectrico.cl) — servicios eléctricos B2B y residenciales en RM.
+- **AgusWer · Coligue Sur** (https://aguswer.cl) — cosecha y venta de colihues en el sur de Chile.
+- **Fuego Estudio** (https://fuegoestudio.cl) — estudio musical: grabación, mezcla, mastering, producción y clases.
 - **Cabañas Santa Regina** (https://cabanassantaregina.cl) — turismo rural.
 
 ## Cómo contactar
