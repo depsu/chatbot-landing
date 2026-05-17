@@ -50,6 +50,16 @@ Empresa hermana enfocada en limpieza de fosas sépticas con flota propia y certi
 ### ChileEléctrico (chileelectrico.cl)
 Servicios eléctricos B2B (empalmes industriales, mantención SEC, montajes) + residencial (urgencias domiciliarias, condominios). El reto era que dos audiencias muy distintas competían por el mismo WhatsApp. Implementamos un bot que diferencia el tipo de consulta en el primer mensaje y dispara dos flujos completamente distintos: B2B con cotización formal y derivación a ingeniero comercial; residencial con respuesta inmediata y despacho de técnico. Resultado: tiempo de respuesta de horas a segundos y mejora de conversión visita técnica B2B → contrato.
 
+## Guías y recursos del blog
+
+- [WhatsApp Bot para PYMES en Chile · guía 2026](https://www.automatizaweb.cl/blog/whatsapp-bot-pymes-chile-guia-2026)
+- [Costos reales de WhatsApp Business API en Chile · 2026](https://www.automatizaweb.cl/blog/costos-whatsapp-business-api-chile-2026)
+- [Chatbot web vs formulario · qué convierte más](https://www.automatizaweb.cl/blog/chatbot-web-vs-formulario-contacto-conversion)
+- [Agendamiento automático con chatbot · clínicas y servicios](https://www.automatizaweb.cl/blog/agendamiento-automatico-chatbot-clinicas-servicios)
+- [El ROI real de automatizar atención 24/7](https://www.automatizaweb.cl/blog/automatizacion-atencion-cliente-24-7-roi-real)
+- [Integrar chatbot con HubSpot, Pipedrive y Notion · guía técnica](https://www.automatizaweb.cl/blog/integrar-chatbot-crm-hubspot-pipedrive-notion)
+- [Cómo elegir agencia de chatbot en Chile · 7 banderas rojas](https://www.automatizaweb.cl/blog/como-elegir-agencia-chatbot-chile-banderas-rojas)
+
 ## Red de aliados
 
 - **PaginasFast** (https://paginasfast.cl) — agencia digital que diseña y desarrolla nuestro sitio. Especialistas en SEO para PYMES chilenas.

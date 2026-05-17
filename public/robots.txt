@@ -4,4 +4,8 @@ Allow: /
 # Endpoints serverless de Vercel (no aportan SEO)
 Disallow: /api/
 
+# Página de confirmación post-formulario (no aporta SEO)
+Disallow: /gracias
+Disallow: /gracias.html
+
 Sitemap: https://www.automatizaweb.cl/sitemap.xml
