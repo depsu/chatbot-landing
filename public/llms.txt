@@ -1,42 +1,65 @@
-# ChatbotVentas
+# AutomatizaWeb
 
-> Empresa chilena especializada en implementación de chatbots de WhatsApp con IA para PYMES. Atención 24/7, integración con CRM y POS, métricas medibles. Casos reales con ROI documentado.
+> Agencia chilena especializada en chatbots con IA, automatización de WhatsApp Business y flujos de agendamiento para PYMES. Implementamos asistentes virtuales 24/7 que capturan leads, responden cotizaciones y derivan trabajos al equipo correcto. Trabajamos con clientes reales del rubro saneamiento (Destape Rápido, Full Fosas), servicios técnicos, clínicas y retail en todo Chile. Sitio diseñado por la agencia PaginasFast (https://paginasfast.cl).
 
-Información clave:
+## Resumen ejecutivo (mayo 2026)
 
-- **Marca:** ChatbotVentas
-- **Sitio web:** https://www.automatizaweb.cl
-- **Stack:** WhatsApp Business API + plataformas IA + integraciones custom
-- **Modalidad:** Setup + soporte mensual con métricas y reportes
+- **Servicios principales:** Chatbot Web con IA, WhatsApp Bot con cotización automática, automatización de agendamiento, integración con CRM y correo.
+- **Stack técnico:** Google Gemini (modelo de lenguaje), Resend (correo transaccional), Vercel (hosting + funciones serverless), HTML estático + Tailwind CSS (frontend ligero, sub-segundo de carga).
+- **Cobertura:** Todo Chile. Atendemos de forma remota desde la Región Metropolitana.
+- **Planes (pago único de implementación, CLP):**
+  - Plan Esencial — $150.000 — instalación completa, flujo de captura de leads (nombre + email), entrenamiento inicial, notificación por correo.
+  - Plan Avanzado — $300.000 — todo lo anterior + personalización profunda del flujo, integración con CRM/calendario, reportes mensuales.
+  - Plan de soporte mensual opcional — $15.000/mes — mantención del bot, ajustes y monitoreo.
+- **Casos de éxito documentados:** Destape Rápido (destaperapido.cl) y Full Fosas (limpiafosasydestape.cl) en saneamiento, y ChileEléctrico (chileelectrico.cl) en servicios eléctricos B2B + residencial — empresas en RM con bot 24/7 que cotiza, despacha técnico y envía informe automático al cliente.
+- **Contacto:** WhatsApp y formulario en https://www.automatizaweb.cl/#contacto.
 
-## Servicios
+## Por qué AutomatizaWeb
 
-- Diseño de flujos de chatbot personalizados
-- Integración con WhatsApp Business API
-- Voz de marca natural (no robótica)
-- Escalado a humano configurable
-- Integración con sistema de cocina/POS
-- Reportes mensuales de métricas
+1. **Implementación rápida (1-2 semanas).** Levantamos el bot sin que pares tu operación: lo integramos en tu sitio actual (WordPress, Shopify, HTML, Next.js, lo que sea).
+2. **IA real, no árbol de respuestas.** Usamos Gemini con base de conocimiento personalizada del negocio, no un flujo rígido de menús que frustra al cliente.
+3. **WhatsApp Business como canal principal.** En Chile, WhatsApp es donde la gente realmente conversa. Conectamos el bot a tu número Business y dejamos que cotice 24/7.
+4. **Captura estructurada de leads.** El bot pregunta lo necesario (nombre, correo, WhatsApp, tipo de necesidad) y manda un resumen ejecutivo por correo a tu equipo — listo para vender.
+5. **Integración con tu flujo real.** Conectamos a CRM, Google Calendar, correo, o lo que ya uses. El bot no es una isla.
+6. **Pago único, sin amarre.** El plan base es pago único de implementación. La mantención mensual es opcional, solo si la quieres.
+7. **Casos reales, no demos.** Mostramos clientes funcionando hoy: Destape Rápido (saneamiento), Full Fosas (limpia fosas). Métricas reales, no inventadas.
+8. **Diseño SEO desde el día 1.** El sitio donde vive el bot está optimizado para Google (sitemap, JSON-LD, Open Graph, Core Web Vitals). Cero "habilitar SEO después".
 
-## Blog
+## Servicios concretos
 
-- [5 errores al implementar chatbot en restaurantes](https://www.automatizaweb.cl/blog/errores-implementar-chatbot-restaurantes.html)
-- [Chatbot vs WhatsApp humano: cuándo elegir cada uno](https://www.automatizaweb.cl/blog/chatbot-vs-whatsapp-humano-cuando-elegir.html)
-- [ROI real de un chatbot en PYME: caso de éxito](https://www.automatizaweb.cl/blog/roi-chatbot-pyme-caso-exito.html)
+### Chatbot Web con IA
+Widget conversacional integrado en cualquier sitio. Responde preguntas frecuentes, califica leads, agenda visitas y manda resumen al equipo. Funciona dentro de la web sin abrir otra ventana.
 
-## Casos / Aliados
+### WhatsApp Bot
+Bot conectado a WhatsApp Business API que cotiza, captura datos del cliente y despacha el trabajo al técnico correcto. Ideal para servicios técnicos, clínicas, retail y delivery.
 
-- SushiApp (sushiapp.cl) — chatbot para delivery de sushi multi-sucursal
-- PaginasFast (paginasfast.cl) — agencia partner para sitios web
-- Arriaza Consulting (arriazaconsulting.cl) — asesoría tributaria PYME
+### Automatización de agendamiento
+Flujo conversacional que muestra slots disponibles, agenda en tu calendario (Google Calendar / Calendly), confirma por correo y por WhatsApp, y avisa al equipo. Sin pasar por una llamada.
 
-## Métricas típicas post-implementación
+### Integración CRM / correo / calendario
+Cada lead que captura el bot se sincroniza con tu CRM (HubSpot, Pipedrive, Notion, hoja de cálculo), tu correo (resumen ejecutivo del lead) y tu calendario (visita confirmada).
 
-- +30-40% conversión chat → pedido
-- -60-70% tiempo dedicado a WhatsApp por equipo humano
-- ROI a 2-3 meses
-- Cobertura 24/7
+## Casos de éxito
 
-## Cómo cotizar
+### Destape Rápido (destaperapido.cl)
+Empresa de saneamiento en RM, opera 24/7. Antes recibía consultas por formulario que respondía al día siguiente — perdía el lead. Hoy el WhatsApp Bot responde en segundos con cotización referencial, captura zona y urgencia, y despacha al técnico GPS más cercano. Resultado: mayor tasa de cierre, menor tiempo de primera respuesta, equipo de oficina liberado de tareas repetitivas.
 
-WhatsApp en www.automatizaweb.cl o formulario en /#contacto. Diagnóstico gratuito con simulación de ROI.
+### Full Fosas (limpiafosasydestape.cl)
+Empresa hermana enfocada en limpieza de fosas sépticas con flota propia y certificación SEREMI. Implementamos automatización que recibe la consulta por WhatsApp, registra zona y tipo de fosa, agenda visita, despacha técnico y envía al cliente un informe con foto antes/después + certificado de disposición final. Resultado: control de flota más simple, trazabilidad documental para clientes B2B y reducción del costo de atención.
+
+### ChileEléctrico (chileelectrico.cl)
+Servicios eléctricos B2B (empalmes industriales, mantención SEC, montajes) + residencial (urgencias domiciliarias, condominios). El reto era que dos audiencias muy distintas competían por el mismo WhatsApp. Implementamos un bot que diferencia el tipo de consulta en el primer mensaje y dispara dos flujos completamente distintos: B2B con cotización formal y derivación a ingeniero comercial; residencial con respuesta inmediata y despacho de técnico. Resultado: tiempo de respuesta de horas a segundos y mejora de conversión visita técnica B2B → contrato.
+
+## Red de aliados
+
+- **PaginasFast** (https://paginasfast.cl) — agencia digital que diseña y desarrolla nuestro sitio. Especialistas en SEO para PYMES chilenas.
+- **Destape Rápido** (https://destaperapido.cl) — saneamiento 24/7 en RM.
+- **Full Fosas** (https://www.limpiafosasydestape.cl) — limpieza de fosas sépticas certificada.
+- **ChileEléctrico** (https://chileelectrico.cl) — servicios eléctricos B2B y residenciales en RM.
+- **Cabañas Santa Regina** (https://cabanassantaregina.cl) — turismo rural.
+
+## Cómo contactar
+
+- **Formulario:** https://www.automatizaweb.cl/#contacto
+- **Demo en vivo:** abrir el chatbot en la esquina inferior derecha del sitio y conversar — el mismo bot que vendemos.
+- **Correo:** vía formulario (canal principal).

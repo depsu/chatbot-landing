@@ -1,48 +1,267 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Blog | ChatbotVentas</title>
-<meta name="description" content="Casos reales, comparativas y ROI de chatbots de WhatsApp en PYMES chilenas. Cómo automatizar atención sin perder calidad.">
-<link rel="canonical" href="https://www.automatizaweb.cl/blog/">
-<meta name="robots" content="index,follow">
-<meta property="og:title" content="Blog | ChatbotVentas">
-<meta property="og:description" content="Casos reales y ROI de chatbots de WhatsApp en PYMES.">
-<meta property="og:url" content="https://www.automatizaweb.cl/blog/">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link href="/output.css" rel="stylesheet">
-<style>body{font-family:'Inter',sans-serif}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog · Automatización para PYMES Chile | AutomatizaWeb</title>
+    <meta name="description" content="Guías, tutoriales y casos de éxito sobre chatbots con IA, WhatsApp Bot y automatización de agendamiento para PYMES chilenas. Casos reales documentados.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://www.automatizaweb.cl/blog/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog · Automatización para PYMES Chile | AutomatizaWeb">
+    <meta property="og:description" content="Guías y casos reales sobre chatbots, WhatsApp Bot y agendamiento automático para PYMES en Chile.">
+    <meta property="og:url" content="https://www.automatizaweb.cl/blog/">
+    <meta property="og:image" content="https://www.automatizaweb.cl/og.jpg">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:site_name" content="AutomatizaWeb">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog · Automatización para PYMES Chile | AutomatizaWeb">
+    <meta name="twitter:description" content="Guías y casos reales sobre chatbots, WhatsApp Bot y agendamiento automático.">
+    <meta name="twitter:image" content="https://www.automatizaweb.cl/og.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23a855f7' d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E">
+    <link href="/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+    </noscript>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712;
+            color: #f9fafb;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #6366F1, #A855F7, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Blog AutomatizaWeb",
+        "description": "Guías, tutoriales y casos de éxito sobre chatbots con IA, WhatsApp Bot y automatización para PYMES chilenas.",
+        "url": "https://www.automatizaweb.cl/blog/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "AutomatizaWeb",
+            "url": "https://www.automatizaweb.cl"
+        },
+        "inLanguage": "es-CL"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.automatizaweb.cl/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.automatizaweb.cl/blog/" }
+        ]
+    }
+    </script>
 </head>
+
 <body class="bg-gray-950 text-gray-100">
-<header class="bg-gray-950/70 backdrop-blur-lg sticky top-0 z-40 border-b border-gray-800">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/" class="text-white font-bold text-xl">Chatbot<span class="text-indigo-500">Ventas</span></a>
-        <div class="flex gap-6 items-center">
-            <a href="/" class="text-gray-300 hover:text-white text-sm">Inicio</a>
-            <a href="/blog/" class="text-gray-300 hover:text-white text-sm">Blog</a>
-            <a href="/#contacto" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-lg font-bold text-sm transition">Contratar</a>
+    <header class="bg-gray-950/70 backdrop-blur-lg sticky top-0 z-40 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-3">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="AutomatizaWeb">
+                    <defs>
+                        <linearGradient id="gradblog" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#6366f1"></stop>
+                            <stop offset="100%" stop-color="#a855f7"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="url(#gradblog)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8 12H12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8 9H16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="text-2xl font-extrabold text-white">Automat<span class="text-purple-400">i</span>z<span class="text-purple-400">a</span>Web</span>
+            </a>
+            <div class="hidden md:flex space-x-6 text-gray-300 font-medium">
+                <a href="/#servicios" class="hover:text-purple-400 transition-colors">Servicios</a>
+                <a href="/#precios" class="hover:text-purple-400 transition-colors">Planes</a>
+                <a href="/#casos" class="hover:text-purple-400 transition-colors">Casos</a>
+                <a href="/blog/" class="text-purple-400 font-semibold">Blog</a>
+            </div>
+            <a href="/#contacto" class="bg-indigo-600 text-white font-bold py-2 px-5 rounded-lg hover:bg-indigo-500 transition-colors text-sm">Agendar llamada</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-gradient-to-br from-gray-950 via-purple-950/30 to-gray-950 py-20 px-6">
+            <div class="container mx-auto max-w-4xl text-center">
+                <nav class="text-xs text-gray-500 mb-6" aria-label="breadcrumbs">
+                    <a href="/" class="hover:text-purple-400">Inicio</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-gray-300">Blog</span>
+                </nav>
+                <p class="text-purple-400 text-xs font-bold tracking-[0.3em] uppercase mb-4">Blog</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight">Automatización para <span class="gradient-text">PYMES chilenas</span></h1>
+                <p class="mt-6 text-base sm:text-lg text-gray-400 max-w-2xl mx-auto">Guías prácticas, tutoriales y casos de éxito reales sobre chatbots con IA, WhatsApp Bot y agendamiento automático. Sin humo, con números.</p>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <article class="bg-gray-900 border border-gray-800 hover:border-purple-500 transition-colors rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-40 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 flex items-center justify-center text-5xl">📱</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs font-bold uppercase tracking-widest text-purple-400">Caso de éxito</p>
+                        <h2 class="text-lg font-bold text-white mt-2 leading-snug">Destape Rápido: WhatsApp Bot que cotiza en segundos y despacha por GPS</h2>
+                        <p class="text-gray-400 text-sm mt-3 flex-grow">Cómo el bot reemplazó el formulario, redujo el tiempo de respuesta de horas a segundos y triplicó los leads convertidos.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Mayo 2026 · 7 min</span>
+                            <a href="/blog/caso-destape-rapido-whatsapp-bot-cotizacion-automatica" class="text-indigo-400 hover:text-purple-400 font-semibold text-sm">Leer →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-gray-900 border border-gray-800 hover:border-purple-500 transition-colors rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-40 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 flex items-center justify-center text-5xl">🚛</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs font-bold uppercase tracking-widest text-purple-400">Caso de éxito</p>
+                        <h2 class="text-lg font-bold text-white mt-2 leading-snug">Full Fosas: automatización de flota, trazabilidad fotográfica e informe al cliente</h2>
+                        <p class="text-gray-400 text-sm mt-3 flex-grow">Despacho del técnico más cercano, foto antes/después por servicio y certificado SEREMI enviado automáticamente.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Mayo 2026 · 8 min</span>
+                            <a href="/blog/caso-full-fosas-automatizacion-flota-trazabilidad" class="text-indigo-400 hover:text-purple-400 font-semibold text-sm">Leer →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-gray-900 border border-gray-800 hover:border-purple-500 transition-colors rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-40 bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-600 flex items-center justify-center text-5xl">⚡</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs font-bold uppercase tracking-widest text-purple-400">Caso de éxito</p>
+                        <h2 class="text-lg font-bold text-white mt-2 leading-snug">ChileEléctrico: bot que diferencia B2B industrial de cliente residencial</h2>
+                        <p class="text-gray-400 text-sm mt-3 flex-grow">Un solo número de WhatsApp, dos flujos completamente distintos. El bot detecta el tipo de consulta y dispara el correcto en segundos.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Mayo 2026 · 8 min</span>
+                            <a href="/blog/caso-chile-electrico-automatizacion-cotizacion-b2b-rm" class="text-indigo-400 hover:text-purple-400 font-semibold text-sm">Leer →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-gray-900 border border-gray-800 hover:border-purple-500 transition-colors rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-40 bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 flex items-center justify-center text-5xl">💬</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs font-bold uppercase tracking-widest text-purple-400">Guía</p>
+                        <h2 class="text-lg font-bold text-white mt-2 leading-snug">WhatsApp Bot para PYMES en Chile · guía 2026</h2>
+                        <p class="text-gray-400 text-sm mt-3 flex-grow">Por qué WhatsApp es el canal nº1 en Chile, qué diferencia hay con WhatsApp Business "manual" y cómo empezar sin enredarte.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Mayo 2026 · 9 min</span>
+                            <a href="/blog/whatsapp-bot-pymes-chile-guia-2026" class="text-indigo-400 hover:text-purple-400 font-semibold text-sm">Leer →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-gray-900 border border-gray-800 hover:border-purple-500 transition-colors rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-40 bg-gradient-to-br from-indigo-500 via-blue-500 to-cyan-500 flex items-center justify-center text-5xl">🆚</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs font-bold uppercase tracking-widest text-purple-400">Análisis</p>
+                        <h2 class="text-lg font-bold text-white mt-2 leading-snug">Chatbot web vs formulario de contacto · qué convierte más</h2>
+                        <p class="text-gray-400 text-sm mt-3 flex-grow">Por qué un chatbot conversacional captura más leads que un formulario tradicional, y cuándo el formulario sigue siendo mejor opción.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Mayo 2026 · 6 min</span>
+                            <a href="/blog/chatbot-web-vs-formulario-contacto-conversion" class="text-indigo-400 hover:text-purple-400 font-semibold text-sm">Leer →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-gray-900 border border-gray-800 hover:border-purple-500 transition-colors rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-40 bg-gradient-to-br from-pink-500 via-rose-500 to-red-500 flex items-center justify-center text-5xl">📅</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs font-bold uppercase tracking-widest text-purple-400">Tutorial</p>
+                        <h2 class="text-lg font-bold text-white mt-2 leading-snug">Agendamiento automático con chatbot · clínicas y servicios</h2>
+                        <p class="text-gray-400 text-sm mt-3 flex-grow">Cómo armar un flujo conversacional que muestre slots, agende en tu calendario y baje el no-show con recordatorios.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Mayo 2026 · 7 min</span>
+                            <a href="/blog/agendamiento-automatico-chatbot-clinicas-servicios" class="text-indigo-400 hover:text-purple-400 font-semibold text-sm">Leer →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-gray-900 border border-gray-800 hover:border-purple-500 transition-colors rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-40 bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 flex items-center justify-center text-5xl">📊</div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <p class="text-xs font-bold uppercase tracking-widest text-purple-400">Análisis</p>
+                        <h2 class="text-lg font-bold text-white mt-2 leading-snug">El ROI real de automatizar atención 24/7</h2>
+                        <p class="text-gray-400 text-sm mt-3 flex-grow">Cuándo un bot escala mejor que sumar gente, cuánto cuesta de verdad, y los casos donde NO conviene automatizar. Números honestos.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Mayo 2026 · 8 min</span>
+                            <a href="/blog/automatizacion-atencion-cliente-24-7-roi-real" class="text-indigo-400 hover:text-purple-400 font-semibold text-sm">Leer →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-br from-indigo-900/40 to-purple-900/40 border-y border-purple-700/30 py-16">
+            <div class="container mx-auto px-6 max-w-3xl text-center">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-3">¿Listo para automatizar tu PYME?</h2>
+                <p class="text-gray-300 mb-6">Te implementamos tu chatbot con IA o tu bot de WhatsApp en 1-2 semanas. Pago único.</p>
+                <a href="/#contacto" class="inline-block bg-purple-600 hover:bg-purple-500 text-white font-bold px-8 py-4 rounded-xl transition">Agendar llamada gratis →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 border-t border-gray-800 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-10">
+                <div>
+                    <p class="text-white font-bold mb-3">AutomatizaWeb</p>
+                    <p class="text-sm leading-relaxed">Chatbots con IA, WhatsApp Bot y automatización de agendamiento para PYMES en Chile.</p>
+                </div>
+                <div>
+                    <p class="text-white font-bold mb-3">Servicios</p>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/#servicios" class="hover:text-purple-400">Chatbot Web</a></li>
+                        <li><a href="/#servicios" class="hover:text-purple-400">WhatsApp Bot</a></li>
+                        <li><a href="/#servicios" class="hover:text-purple-400">Agendamiento</a></li>
+                        <li><a href="/#servicios" class="hover:text-purple-400">Integraciones CRM</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-white font-bold mb-3">Recursos</p>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/blog/" class="hover:text-purple-400">Blog</a></li>
+                        <li><a href="/#casos" class="hover:text-purple-400">Casos de éxito</a></li>
+                        <li><a href="/#precios" class="hover:text-purple-400">Planes</a></li>
+                        <li><a href="/#faq" class="hover:text-purple-400">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-white font-bold mb-3">Red de aliados</p>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://paginasfast.cl" rel="noopener" target="_blank" class="hover:text-purple-400">PaginasFast (agencia)</a></li>
+                        <li><a href="https://destaperapido.cl" rel="noopener" target="_blank" class="hover:text-purple-400">Destape Rápido</a></li>
+                        <li><a href="https://www.limpiafosasydestape.cl" rel="noopener" target="_blank" class="hover:text-purple-400">Full Fosas</a></li>
+                        <li><a href="https://chileelectrico.cl" rel="noopener" target="_blank" class="hover:text-purple-400">ChileEléctrico</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs">
+                <p>&copy; <span id="yyear"></span> AutomatizaWeb · Todos los derechos reservados.</p>
+                <p>Sitio diseñado y desarrollado por <a href="https://paginasfast.cl" rel="noopener" target="_blank" class="text-purple-400 hover:text-purple-300 font-semibold">PaginasFast</a> — agencia digital para PYMES.</p>
+            </div>
         </div>
-    </nav>
-</header>
-<section class="bg-gradient-to-br from-gray-950 via-indigo-950/30 to-gray-950 py-20 px-6 text-center">
-    <div class="container mx-auto max-w-3xl">
-        <p class="text-indigo-400 text-xs font-bold tracking-[0.4em] uppercase">Casos & Análisis</p>
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white mt-4">Blog</h1>
-        <p class="text-gray-400 mt-6 text-lg">Casos reales y ROI de chatbots de WhatsApp en PYMES chilenas.</p>
-    </div>
-</section>
-<section class="container mx-auto px-6 py-16 max-w-6xl">
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><a href="/blog/errores-implementar-chatbot-restaurantes.html" class="block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-indigo-500 transition group"><span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Casos reales</span><h3 class="text-xl font-bold text-white mt-3 group-hover:text-indigo-400 transition">5 errores al implementar un chatbot en un restaurante (y cómo evitarlos)</h3><p class="text-gray-400 mt-3 text-sm">Caso real con un restaurante de sushi. Errores que vemos en cada implementación: bot demasiado robótico, escalado mal calibrado, integración con cocina rota.</p><p class="text-indigo-400 text-sm font-bold mt-4">Leer artículo →</p></a><a href="/blog/chatbot-vs-whatsapp-humano-cuando-elegir.html" class="block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-indigo-500 transition group"><span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Comparativa</span><h3 class="text-xl font-bold text-white mt-3 group-hover:text-indigo-400 transition">Chatbot vs WhatsApp humano: cuándo conviene cada uno (y cuándo combinar los dos)</h3><p class="text-gray-400 mt-3 text-sm">No siempre el chatbot es la respuesta. Comparamos costos, conversión y escenarios reales para ayudarte a decidir entre humano, bot o solución híbrida.</p><p class="text-indigo-400 text-sm font-bold mt-4">Leer artículo →</p></a><a href="/blog/roi-chatbot-pyme-caso-exito.html" class="block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-indigo-500 transition group"><span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">ROI</span><h3 class="text-xl font-bold text-white mt-3 group-hover:text-indigo-400 transition">ROI real de un chatbot en PYME: cifras reales después de 8 meses</h3><p class="text-gray-400 mt-3 text-sm">Análisis financiero detallado del impacto de implementar chatbot en PYME chilena. Costos, ahorro, aumento de conversión y consideraciones tributarias.</p><p class="text-indigo-400 text-sm font-bold mt-4">Leer artículo →</p></a></div>
-</section>
-<footer class="bg-gray-950 border-t border-gray-800 text-gray-400 py-10">
-    <div class="container mx-auto px-6 text-center text-sm">
-        <p>&copy; <span id="yy"></span> ChatbotVentas · Chatbots de WhatsApp para PYMES</p>
-        <p class="mt-2 text-xs">Aliados: <a href="https://paginasfast.cl" rel="noopener" class="hover:text-indigo-400">PaginasFast</a> · <a href="https://arriazaconsulting.cl" rel="noopener" class="hover:text-indigo-400">Arriaza Consulting</a></p>
-    </div>
-    <script>document.getElementById('yy').textContent=new Date().getFullYear();</script>
-</footer>
+        <script>document.getElementById('yyear').textContent = new Date().getFullYear();</script>
+    </footer>
 </body>
 </html>

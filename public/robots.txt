@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Endpoints serverless de Vercel (no aportan SEO)
+Disallow: /api/
+
 Sitemap: https://www.automatizaweb.cl/sitemap.xml
