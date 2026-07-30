@@ -4,7 +4,18 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/blog/index.html", "destination": "/blog/", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true }
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    {
+      "source": "/blog/atencion-24-7-agendamiento-automatico-pyme",
+      "destination": "/blog/automatizacion-atencion-cliente-24-7-roi-real",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "automatizaweb.cl" }],
+      "destination": "https://www.automatizaweb.cl/$1",
+      "permanent": true
+    }
   ],
   "headers": [
     {
