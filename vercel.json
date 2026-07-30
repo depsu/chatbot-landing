@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/blog/index.html", "destination": "/blog/", "permanent": true },
+    { "source": "/blog/index.html", "destination": "/blog", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     {
       "source": "/blog/atencion-24-7-agendamiento-automatico-pyme",
