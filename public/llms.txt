@@ -56,10 +56,15 @@ Cosecha y venta de colihues en el sur de Chile para parceleros, constructoras, v
 ### Fuego Estudio (fuegoestudio.cl)
 Estudio musical chileno que ofrece grabación, mezcla, mastering, producción y clases. Bot que separa 3 flujos en un solo número: cotización de servicios de producción, reserva de sesión (sincronizada con Google Calendar) y captura de interesados en clases (instrumento, nivel, modalidad). Resultado: equipo creativo deja de responder WhatsApp entre takes y se enfoca en cabina; no-show baja con recordatorio automático.
 
+## Páginas de servicio
+
+- [Servicios de automatización para empresas en Chile](https://www.automatizaweb.cl/servicios-de-automatizacion-chile)
+- [Chatbot para empresas en Chile](https://www.automatizaweb.cl/chatbot-para-empresas-chile)
+
 ## Guías y recursos del blog
 
 - [WhatsApp Bot para PYMES en Chile · guía 2026](https://www.automatizaweb.cl/blog/whatsapp-bot-pymes-chile-guia-2026)
-- [Costos reales de WhatsApp Business API en Chile · 2026](https://www.automatizaweb.cl/blog/costos-whatsapp-business-api-chile-2026)
+- [Cuánto cuesta WhatsApp Business en Chile · precios 2026](https://www.automatizaweb.cl/blog/costos-whatsapp-business-api-chile-2026)
 - [Chatbot web vs formulario · qué convierte más](https://www.automatizaweb.cl/blog/chatbot-web-vs-formulario-contacto-conversion)
 - [Agendamiento automático con chatbot · clínicas y servicios](https://www.automatizaweb.cl/blog/agendamiento-automatico-chatbot-clinicas-servicios)
 - [El ROI real de automatizar atención 24/7](https://www.automatizaweb.cl/blog/automatizacion-atencion-cliente-24-7-roi-real)
