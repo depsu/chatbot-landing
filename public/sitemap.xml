@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.automatizaweb.cl/blog</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -108,6 +108,12 @@
   <url>
     <loc>https://www.automatizaweb.cl/blog/cotizacion-industrial-whatsapp-brief-por-tipo-de-pieza</loc>
     <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.automatizaweb.cl/blog/chatbot-caida-servidor-respaldos-continuidad-pyme</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
